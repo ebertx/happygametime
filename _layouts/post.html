@@ -1,3 +1,5 @@
+{% assign author = site.authors[page.author] %}
+
 <!DOCTYPE html>
 <html lang="en">
 {% include head.html %}
@@ -6,6 +8,9 @@
     <a href="/" class="logo">
       <!-- <img src="/otter-pop/img/logo.jpg"> -->
     </a>
+
+    <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=75" />
+    <div>by: {{ author.display_name }}</div>
 
     <ul class="nav">
       <div class="nav-inner">
@@ -18,11 +23,10 @@
       </div>
     </ul>
   </div>
-  {% assign author = site.authors[page.author] %}
+  
   <article class="wrapper">
     <header>
       <h1>{{ page.title }}</h1>
-      <span>by: {{ author.display_name }}</span>
     </header>
     <div class="post-body">
       {{ content }}
