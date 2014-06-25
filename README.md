@@ -1,7 +1,4 @@
-# Otter Pop
+# Happy Game Time Blog
 
-The world's greatest Jekyll theme.
+The only gaming blog that matters (to me)
 
-Example: <http://tybenz.com>
-
-![](http://jekyllthemes.org/thumbnails/otter-pop.png)
