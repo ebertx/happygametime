@@ -1,20 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ site.description }}</title>
-
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="apple-touch-img/logo-precomposed" href="/otter-pop/img/logo.jpg">
-    <link rel="apple-touch-img/logo" href="/otter-pop/img/logo.jpg">
-    <link rel="apple-touch-img/logo" sizes="72x72" href="/otter-pop/img/logo.jpg">
-    <link rel="apple-touch-img/logo" sizes="114x114" href="/otter-pop/img/logo.jpg">
-
-    <link href="/css/styles.css" rel="stylesheet" type="text/css">
-    <link href="/css/pygments.css" rel="stylesheet" type="text/css">
-    <link href="/img/logo.jpg" rel="shortcut icon">
-</head>
+{% include head.html %}
 <body>
   <div class="sidebar">
     <a href="/" class="logo">
@@ -32,14 +18,16 @@
       </div>
     </ul>
   </div>
-  <div class="wrapper">
-    <!--<h1><marquee scrolldelay="60">otter pop - the world's greatest jekyll theme</marquee></h1>-->
-    <h1>{{ page.title }}</h1>
-
+  {% assign author = site.authors[page.author] %}
+  <article class="wrapper">
+    <header>
+      <h1>{{ page.title }}</h1>
+      <span>by: {{ author.display_name }}</span>
+    </header>
     <div class="post-body">
       {{ content }}
     </div>
-  </div>
+  </article>
   <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

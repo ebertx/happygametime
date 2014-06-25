@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Intro post
+title: "Intro post"
+author: ebertx
 ---
 
 A tribute to gaming greatness

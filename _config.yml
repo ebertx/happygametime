@@ -3,5 +3,14 @@ permalink: /blog/:year/:month/:day/:title
 markdown: rdiscount
 exclude: ['.git']
 name: "Happy Game Time"
-description: "A Game Blog"
+description: "Happy Game Time - A Game Blog"
 url: http://happygametime.com
+authors:
+  ebertx:
+    name: Christian Paulsen
+    display_name: Christian
+    gravatar: b71a5abdd696a20fc42d369a5e6be7e7
+    email: ebertx@gmail.com
+    web: http://apcoder.com
+    twitter: ebertx
+    github: ebertx
