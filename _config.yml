@@ -1,7 +1,7 @@
-pygments: true
-permalink: /otter-pop/:year/:month/:day/:title
+highlighter: true
+permalink: /blog/:year/:month/:day/:title
 markdown: rdiscount
 exclude: ['.git']
-name: "Otter Pop"
-description: "The world's greated jekyll theme"
-url: http://tybenz.com/otter-pop
+name: "Happy Game Time"
+description: "A Game Blog"
+url: http://happygametime.com
