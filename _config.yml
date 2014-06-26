@@ -1,7 +1,7 @@
 highlighter: true
 permalink: /blog/:year/:month/:day/:title
 markdown: rdiscount
-exclude: ['.git']
+exclude: ['.git', 'bower.json', '.bowerrc', 'README.md']
 name: "Happy Game Time"
 description: "Happy Game Time - A Game Blog"
 url: http://happygametime.com
