@@ -1,0 +1,28 @@
+---
+---
+
+@import '/css/styles.css';
+@import '/css/pygments.css';
+
+.nav-inner {
+	li a i {
+		margin-right: 10px;
+	}
+}
+
+article {
+	header {
+
+		padding-bottom: 10px;
+		border-bottom: 2px rgba(random(255), random(255), random(255), 1) solid;
+
+		h1 {
+			text-transform: capitalize !important;
+			margin-bottom: 0px;
+			padding-bottom: 5px !important;
+		}
+		address {
+			font-size: 14px;
+		}
+	}
+}

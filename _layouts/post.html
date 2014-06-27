@@ -10,6 +10,16 @@
   <article class="wrapper">
     <header>
       <h1>{{ page.title }}</h1>
+      {% if author.display_name %}
+        <!--   <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=75" /> -->
+        <div class="byline">
+          <address class="author">
+            by: <a rel="author" href="/{{ author.nick  }}" >{{ author.display_name }}</a>
+            on <time pubdate datetime="{{ page.date | date: '%m-%d-%Y' }}" title="{{ page.date | date: '%-d %B %Y' }}">{{ page.date | date: '%-d %B %Y' }}</time>
+          </address>
+        </div>
+      {% endif %}
+
     </header>
     <div class="post-body">
       {{ content }}

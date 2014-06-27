@@ -3,11 +3,6 @@
     <!-- <img src="/otter-pop/img/logo.jpg"> -->
   </a>
 
-  {% if author.display_name %}
-  <img src="http://www.gravatar.com/avatar/{{ author.gravatar }}?s=75" />
-  <div>by: {{ author.display_name }}</div>
-  {% endif %}
-
   <ul class="nav">
     <div class="nav-inner">
       <li><a href="{{ site.url }}">{% icon fa-bomb %}blog</a></li>

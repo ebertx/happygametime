@@ -4,8 +4,7 @@ title: "Intro post"
 author: ebertx
 ---
 
-A tribute to gaming greatness
------------------------------
+### A tribute to gaming greatness
 
 I've observed a rather alarming dearth of tributes to myself, so I suppose I need to go ahead and get the ball rolling. 
 
